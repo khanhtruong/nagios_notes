@@ -1,0 +1,25 @@
+<table>
+  <tr>
+    <th>Hostname</th>
+    <th>Ip</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hosts.each do |host| %>
+  <tr>
+    <td style="width: 200px;"><%= host.hostname %></td>
+    <td style="width: 150px;"><%= host.ip %></td>
+    <td style="width: 400px;"size="300"><%= host.notes %></td>
+    <td><%= link_to 'Show', host %></td>
+    <td><%= link_to 'Edit', edit_host_path(host) %></td>
+    <td><%= link_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Host', new_host_path %>
