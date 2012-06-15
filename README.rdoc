@@ -13,7 +13,9 @@ URL is mapped easily to http://server.com/hostname/service. So you can do http:/
 /hostname/service/edit?notes=some+nagios+notes
 /hostname/service/update?notes=some+nagios+notes
 
-in addition, the traditional resource mappings are also supported
+In addition, the traditional resource mappings are also supported
+
 /hosts
 /hosts/1
 /hosts/1/services/1
+
