@@ -6,16 +6,16 @@ This system was created to link with the 'notes_url' field in nagios object defi
 
 URL is mapped easily to http://server.com/hostname/service. So you can do http://server.com/linux-1/disk to view the nagios notes for host 'linux-1' and the service 'disk'. If the host or service doesn't exist, then it'll be automatically created so the urls will always work. Here's a mapping of the possible urls:
 
-/hostname
-/hostname/update?notes=host+related+notes
-/hostname/service
-/hostname/service/edit
-/hostname/service/edit?notes=some+nagios+notes
-/hostname/service/update?notes=some+nagios+notes
+/hostname.
+/hostname/update?notes=host+related+notes.
+/hostname/service.
+/hostname/service/edit.
+/hostname/service/edit?notes=some+nagios+notes.
+/hostname/service/update?notes=some+nagios+notes.
 
-In addition, the traditional resource mappings are also supported
+In addition, the traditional resource mappings are also supported:
 
-/hosts
-/hosts/1
-/hosts/1/services/1
+/hosts.
+/hosts/1.
+/hosts/1/services/1.
 
