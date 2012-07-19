@@ -6,6 +6,7 @@ AirGNOC::Application.routes.draw do
 
   match ":hostname" => 'hosts#show'
   match ":hostname/update" => 'hosts#update'
+  match ":hostname/edit" => 'hosts#edit'
   match ":hostname/:service_check" => 'services#show'
   match ":hostname/:service_check/edit" => 'services#edit'
   match ":hostname/:service_check/update" => 'services#update'
