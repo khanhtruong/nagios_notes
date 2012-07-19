@@ -42,7 +42,16 @@ class HostsController < ApplicationController
 
   # GET /hosts/1/edit
   def edit
-    @host = Host.find(params[:id])
+    if params[:hostname]
+      @host = Host.find_by_hostname(params[:hostname])
+      unless @host
+        @host = Host.new
+        @host.hostname = params[:hostname]
+        @host.save
+      end
+    elsif params[:id]
+        @host = Host.find(params[:id])
+    end
   end
 
   # POST /hosts
