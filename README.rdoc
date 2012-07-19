@@ -8,6 +8,7 @@ URL is mapped easily to http://server.com/hostname/service. So you can do http:/
 
   /hostname  
   /hostname/update?notes=host+related+notes  
+  /hostname/edit  
   /hostname/service  
   /hostname/service/edit  
   /hostname/service/edit?notes=some+nagios+notes  
